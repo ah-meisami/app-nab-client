@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import TestFetchDept from './oracle/TestFetchDept';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
@@ -41,15 +42,7 @@ const VisViewer = (props) => {
 };
 
 ReactDOM.render(
-	<BrowserRouter>
-		{/* <Route path='/' component={App}/> */}
-		<Route path="/login" component={Login} />
-		<Route path="/portal" component={Portal} />
-		<Route path="/visBuilder" component={VisBuilder} />
-		<Route path="/visViewer/:visName" component={VisViewer} />
-		{/* {<Route path='/WebCatalog' component={WebCatalog}/>} */}
-		{/* {<Route path='/UserManagement' component={UserManagement}/>} */}
-	</BrowserRouter>,
+	<TestFetchDept/>,
 	document.getElementById('root')
 );
 
